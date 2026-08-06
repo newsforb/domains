@@ -1,50 +1,189 @@
----
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
----
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premium Domains For Sale</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        background: #0b0b12;
+        color: #ffffff;
+        line-height: 1.6;
+    }
+
+    header {
+        padding: 70px 20px;
+        text-align: center;
+        background: linear-gradient(135deg, #111827, #312e81);
+    }
+
+    header h1 {
+        font-size: 48px;
+        margin-bottom: 15px;
+    }
+
+    header p {
+        font-size: 20px;
+        color: #d1d5db;
+    }
+
+    .container {
+        max-width: 1100px;
+        margin: auto;
+        padding: 50px 20px;
+    }
+
+    .domains {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+    }
+
+    .domain-card {
+        background: #171725;
+        border: 1px solid #2d2d44;
+        border-radius: 16px;
+        padding: 35px 25px;
+        text-align: center;
+        transition: 0.3s ease;
+    }
+
+    .domain-card:hover {
+        transform: translateY(-8px);
+        border-color: #818cf8;
+        box-shadow: 0 15px 40px rgba(129,140,248,0.2);
+    }
+
+    .domain-card h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+        color: #ffffff;
+    }
+
+    .domain-card p {
+        color: #a5b4fc;
+        margin-bottom: 25px;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 12px 28px;
+        background: #6366f1;
+        color: white;
+        text-decoration: none;
+        border-radius: 30px;
+        font-weight: bold;
+    }
+
+    .button:hover {
+        background: #818cf8;
+    }
+
+    .contact {
+        margin-top: 60px;
+        text-align: center;
+        background: #111827;
+        padding: 45px 20px;
+        border-radius: 20px;
+    }
+
+    .contact h2 {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .contact a {
+        color: #a5b4fc;
+        font-size: 22px;
+        text-decoration: none;
+    }
+
+    footer {
+        text-align: center;
+        padding: 25px;
+        color: #9ca3af;
+        font-size: 14px;
+    }
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Premium Domains Available</h1>
+    <p>Secure your next brand identity with a memorable domain name.</p>
+</header>
+
+<div class="container">
+
+    <section class="domains">
+
+        <div class="domain-card">
+            <h2>coelestia.com</h2>
+            <p>Elegant • Premium • Brandable</p>
+            <a class="button" href="mailto:info@?subject=Purchase%20Inquiry%20-%20coelestia.com">Buy Now</a>
+        </div>
+
+        <div class="domain-card">
+            <h2>crazedbeauty.com</h2>
+            <p>Perfect for beauty, fashion and lifestyle brands</p>
+            <a class="button" href="mailto:info@?subject=Purchase%20Inquiry%20-%20crazedbeauty.com">Buy Now</a>
+        </div>
+
+        <div class="domain-card">
+            <h2>eternalmaterialist.com</h2>
+            <p>Unique name for luxury and creative industries</p>
+            <a class="button" href="mailto:info@?subject=Purchase%20Inquiry%20-%20eternalmaterialist.com">Buy Now</a>
+        </div>
+
+        <div class="domain-card">
+            <h2>harryshome.shop</h2>
+            <p>Ideal ecommerce and retail domain</p>
+            <a class="button" href="mailto:info@?subject=Purchase%20Inquiry%20-%20harryshome.shop">Buy Now</a>
+        </div>
+
+        <div class="domain-card">
+            <h2>imperialtradeglobal.com</h2>
+            <p>Strong corporate and international business identity</p>
+            <a class="button" href="mailto:info@?subject=Purchase%20Inquiry%20-%20imperialtradeglobal.com">Buy Now</a>
+        </div>
+
+        <div class="domain-card">
+            <h2>internationalfieldproduction.com</h2>
+            <p>Suitable for global production companies</p>
+            <a class="button" href="mailto:info@?subject=Purchase%20Inquiry%20-%20internationalfieldproduction.com">Buy Now</a>
+        </div>
+
+        <div class="domain-card">
+            <h2>smartypilates.com</h2>
+            <p>Great fit for fitness, wellness and Pilates brands</p>
+            <a class="button" href="mailto:info@?subject=Purchase%20Inquiry%20-%20smartypilates.com">Buy Now</a>
+        </div>
+
+    </section>
+
+
+    <section class="contact">
+        <h2>Interested in a Domain?</h2>
+        <p>Contact us for pricing and transfer details.</p>
+        <br>
+        <a href="mailto:info@">info@</a>
+    </section>
+
+</div>
+
+<footer>
+    © 2026 Premium Domains. All rights reserved.
+</footer>
+
+</body>
 </html>
